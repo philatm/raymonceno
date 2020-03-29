@@ -15,12 +15,27 @@
  		</nav>
  		<main>
  			<div class="container">
- 				<section id="sonet">	
- 					<p>Op</p>
- 				
- 				
- 				</section>
  				<button type="button" onclick="getRandomSonet()">Получить новый стих</button>
+ 				<div class="row">
+ 					<div class="column left" style="background-color:#aaa;">
+ 						<button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+ 					</div>
+ 					<div id="sonet" class="column middle" style="background-color:#bbb;">	
+ 						<p>Op</p>
+ 				
+ 				
+ 					</div>
+ 					<div class="column right" style="background-color:#ccc;">
+
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+          </div>
+        </div>
+
+ 				
  			</div>
  		</main>
  		<footer>

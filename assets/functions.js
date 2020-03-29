@@ -15,9 +15,8 @@ function redraw() {
 	let poemNum = state.map(function (item) {
 		return (item + 1) % 10;
 	})
-	res = '<h1>' + poemNum.join('') + '</h1>' + res;
+	//res = '<h1>' + poemNum.join('') + '</h1>' + res;
 	document.getElementById("sonet").innerHTML = res;
-	return res;
 
 }
 function getRandomState() {

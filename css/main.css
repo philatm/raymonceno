@@ -48,7 +48,62 @@ table {
 }
 
 
+
+
+* {
+  box-sizing: border-box;
+}
 .container {
-	max-width: 400px;
-	margin: 0 auto;
+	max-width: 600px;
+	padding: 0 15px;
+    margin: auto;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 90%;
+}
+.left, .right {
+  width: 10%;
+}
+
+.middle {
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0.8rem;
+}
+button {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  display: block;
+  margin: 1em 0;
+}
+
+button:hover, button:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: none;
+}
+
+button:active {
+  border-color: red;
+}
+/*
+.left button {
+  margin-left: 75%;
 }
