@@ -16,6 +16,7 @@ function redraw() {
 		return (item + 1) % 10;
 	})
 	//res = '<h1>' + poemNum.join('') + '</h1>' + res;
+	document.getElementById("num").innerHTML = poemNum.join('');
 	document.getElementById("sonet").innerHTML = res;
 
 }

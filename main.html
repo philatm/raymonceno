@@ -4,46 +4,72 @@
   	<meta charset="utf-8">
   	<title> Раймон Кено </title>
   	<link rel="stylesheet" href="css/main.css">
-  	
  	</head>
  	<body>
+ 		<!--
  		<nav>
 				<a href="index.html">Главная</a>
  				<a href="main.html">Почитать</a>
  				<a href="about.html">О проекте</a>
  			</ul>
  		</nav>
+ 	-->
  		<main>
  			<div class="container">
- 				<button type="button" onclick="getRandomSonet()">Получить новый стих</button>
  				<div class="row">
- 					<div class="column left" style="background-color:#aaa;">
+ 					<button id="getNew" type="button" onclick="getRandomSonet()">Получить новый стих</button>
+ 					<div id="logo">Стих №  <span id="num">00000000 </span></div>
+ 				</div>
+ 				<div class="row">
+ 					<div class="column left">
  						<button type="button" onclick="prev(this)">–</button>
             <button type="button" onclick="prev(this)">–</button>
             <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
+            <button type="button" onclick="prev(this)">–</button>
  					</div>
- 					<div id="sonet" class="column middle" style="background-color:#bbb;">	
+ 					<div id="sonet" class="column middle" >	
  						<p>Op</p>
- 				
- 				
  					</div>
- 					<div class="column right" style="background-color:#ccc;">
-
+ 					<div class="column right">
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
+            <button type="button" onclick="next(this)">+</button>
             <button type="button" onclick="next(this)">+</button>
             <button type="button" onclick="next(this)">+</button>
             <button type="button" onclick="next(this)">+</button>
           </div>
         </div>
-
- 				
  			</div>
  		</main>
  		<footer>
  		</footer>
 
-	 	<script type="text/javascript" src="./assets/ru_sonets.js"></script>
-	 	<script type="text/javascript" src="./assets/functions.js"></script>
 
+ 		<script type="text/javascript" src="./assets/ru_sonets.js"></script>
+ 		<script type="text/javascript" src="./assets/functions.js"></script>
+ 		<script>
+ 			window.onload = function() {
+ 				getRandomSonet();
+ 			}
+ 		</script>
  	</body>
 
 </html>
