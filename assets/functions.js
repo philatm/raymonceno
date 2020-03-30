@@ -47,15 +47,30 @@ function getRandomState() {
 		return m;
 	});
 }
+
+function getSonet(hash) {
+	if (hash.length != numOfStrOfPoem + 1) {
+		return
+	}
+	hash = hash.split('');
+	hash.splice(0, 1);
+	hash.splice(14);
+	hash.forEach(function(x, i) {
+		state[i] = (Number(x) + numOfSonets - 1) % 10 
+	});
+}
+
+function whileload() {
+	let strAddr = document.URL;
+	let addr = new URL(strAddr);
+	let hash = addr.hash;
+	console.log(addr);
+	getRandomState();
+	getSonet(hash);
+	redraw();
+
+}
 function getRandomSonet() {
 	getRandomState();
 	redraw();
-}
-function getRandomSonetOrig() {
-	let m = Math.floor(Math.random()*(numOfSonets));
-	let res = '<h1>' + (m + 1) + '</h1>';
-	for(let i=0; i<14; i++) {
-		res += '<p>' + t[m][i] + '</p>';
-	}
-	return res;
 }
