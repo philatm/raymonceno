@@ -18,6 +18,13 @@ function next(clicked) {
 	state[ind] %= numOfSonets;
 	redraw();
 }
+function choose(clicked) {
+	i = [].indexOf.call(clicked.parentElement.children, clicked);
+	state = state.map(function () {
+		return i;
+	})
+	redraw();
+}
 
 function redraw() {
 	let res = '';

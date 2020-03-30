@@ -118,5 +118,11 @@ button:active {
 .left button {
   margin-right: 0;
   margin-left: auto;
-
+}
+.btns {
+  text-align: center;
+}
+.btns button {
+  display: inline-block;
+  margin: auto 0.3em;
 }
