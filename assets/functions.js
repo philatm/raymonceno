@@ -6,6 +6,18 @@ let state = Array.apply(null, Array(numOfStrOfPoem));
 function putSonet() {
 	document.getElementById("sonet").innerHTML = getRandomSonet();
 }
+function prev(clicked) {
+	ind = [].indexOf.call(clicked.parentElement.children, clicked);
+	state[ind] += numOfSonets - 1;
+	state[ind] %= numOfSonets;
+	redraw();
+}
+function next(clicked) {
+	ind = [].indexOf.call(clicked.parentElement.children, clicked);
+	state[ind] += 1;
+	state[ind] %= numOfSonets;
+	redraw();
+}
 
 function redraw() {
 	let res = '';
